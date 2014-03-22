@@ -1,0 +1,6 @@
+Steps:
+https://github.com/clojure/clojurescript/wiki/Quick-Start 
+https://developers.google.com/closure/library/docs/gettingstarted
+
+Remember to run this before refreshing webpage ...
+cljsc hello.cljs > hello.js
