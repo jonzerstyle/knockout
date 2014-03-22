@@ -1,0 +1,34 @@
+<html>
+  <head><title>My Page</title>
+    <script src="closure-library/closure/goog/base.js"></script>
+    <script src="mygoog.js"></script>
+  </head>
+<body onload="sayHi() ">
+<div class='liveExample'>   
+    <p>First name: <input data-bind='value: firstName' /></p> 
+    <p>Last name: <input data-bind='value: lastName' /></p> 
+    <h2>Hello, <span data-bind='text: fullName'> </span>!</h2>  
+</div>
+<script
+  src="https://github.com/knockout/knockout/releases/download/v3.1.0/knockout-3.1.0.js"
+  </script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- reference this *before* initializing -->
+<script src="myApp.js"></script>
+
+    <script type="text/javascript" src="out/goog/base.js"></script>
+    <script type="text/javascript" src="hello.js"></script>
+    <script type="text/javascript">goog.require('hello');</script>
+    <script>
+      alert(hello.greet("ClojureScript"));
+    </script>
+
+<!-- fire off your app -->
+<script>
+    $(function(){
+       var reportVM = new myApp.ReportViewModel();
+       ko.applyBindings(reportVM);
+    });
+</script>
+</body>
+</html>
