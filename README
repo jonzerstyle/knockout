@@ -50,11 +50,15 @@ outstanding ticket for a similar issue... from 2012.
 I'll check this stuff in - the next thing I am going to look at is cljsbuild
 with lein and see if I can make any progress with that instead.
 
-I can understand the dependency problem above because the clojurescript builder
-is a tool that is not part of the closure library - though it appears it is
+I can understand the dependency problem above because the clojurescript compiler
+
+	git://github.com/clojure/clojurescript.git
+
+is a tool that is not part of the closure google library - though it appears it is
 trying
 to be compatible with it because the hello.js file includes adding dependencies
-for goog.  So If I had to guess there is some incompatibility now with the new
+for goog and outputs to a out file just like the closure library stuff does.  
+  So If I had to guess there is some incompatibility now with the new
   deps builder possibly and the javascript the cljsc compiler generates.
 
 I made some sh scripts to help document compiling of the hello.cljs and also to 
