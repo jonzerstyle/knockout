@@ -1,5 +1,10 @@
 Steps:
 https://github.com/clojure/clojurescript/wiki/Quick-Start 
+
+git clone git://github.com/clojure/clojurescript.git
+cd clojurescript
+./script/bootstrap
+
 https://developers.google.com/closure/library/docs/gettingstarted
 
 Remember to run this before refreshing webpage ...
